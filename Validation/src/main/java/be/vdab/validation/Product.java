@@ -1,11 +1,14 @@
 package be.vdab.validation;
 
+import jakarta.validation.constraints.Digits;
+import jakarta.validation.constraints.PositiveOrZero;
+
 import java.math.BigDecimal;
 
 class Product {
-    @PositiveOrZero @Digits (integer = 7, fraction = 2)
+    @Prijs
     private BigDecimal aankoopPrijs;
-    @PositiveOrZero @Digits (integer = 7, fraction = 2)
+    @Prijs
     private BigDecimal verkoopPrijs;
 
 
