@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.service.annotation.GetExchange;
 import org.springframework.web.service.annotation.PostExchange;
 
-import java.awt.*;
 
 public interface Requests {
 
@@ -19,4 +18,5 @@ public interface Requests {
 
     @PostExchange(contentType = MediaType.APPLICATION_JSON_VALUE)
     void post(@RequestBody NieuweUser nieuweUser);
+
 }
