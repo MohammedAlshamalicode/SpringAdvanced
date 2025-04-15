@@ -5,6 +5,7 @@ import jakarta.validation.constraints.PositiveOrZero;
 
 import java.math.BigDecimal;
 
+@VerkoopPrijsAankoopPrijs
 class Product {
     @Prijs
     private BigDecimal aankoopPrijs;
